@@ -13,3 +13,5 @@
 /obj/project.nuget.cache
 /bin/Debug/net6.0-windows
 /obj/Debug/net6.0-windows
+/bin/Debug/net8.0-windows7.0
+/obj/Debug/net8.0-windows7.0

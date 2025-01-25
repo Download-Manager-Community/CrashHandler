@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/obj/CrashHandler.csproj.nuget.dgspec.json
+/obj/CrashHandler.csproj.nuget.g.props
+/obj/Debug/net6.0-windows/CrashHandler.AssemblyInfo.cs
+/obj/Debug/net6.0-windows/CrashHandler.AssemblyInfoInputs.cache
+/obj/Debug/net6.0-windows/CrashHandler.assets.cache
+/obj/Debug/net6.0-windows/CrashHandler.csproj.AssemblyReference.cache
+/obj/Debug/net6.0-windows/CrashHandler.GeneratedMSBuildEditorConfig.editorconfig
+/obj/project.assets.json
+/obj/project.nuget.cache
+/bin/Debug/net6.0-windows
+/obj/Debug/net6.0-windows

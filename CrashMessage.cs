@@ -23,18 +23,28 @@ namespace CrashHandler
             textBox1.Text = ex[0];
 
             // Populate message
-            textBox2.Text = ex[1];
+            richTextBox2.Text = ex[1].Replace("\n", Environment.NewLine);
+            richTextBox2.Invalidate();
+            richTextBox2.Update(); // Force the RichTextBox to refresh its layout
 
-            // Populate stacktrace
+            // Populate information
             foreach (var line in ex)
             {
-                // If lines are exception or message
-                if (line == ex[0] || line == ex[1])
+                // If lines are exception type
+                if (line == ex[0])
                 {
                     // Do nothing
                     continue;
                 }
-                // Else output to stacktrace
+
+                if (line == ex[1])
+                {
+                    // Write both the message and type to the information
+                    richTextBox1.Text += $"{line.Replace("\\n", Environment.NewLine)} ({ex[0]})\n";
+                    continue;
+                }
+
+                // Else output to information
                 richTextBox1.Text += line + "\n";
             }
         }

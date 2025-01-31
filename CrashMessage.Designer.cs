@@ -34,11 +34,11 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
             label5 = new Label();
             richTextBox1 = new RichTextBox();
             button1 = new Button();
             button2 = new Button();
+            richTextBox2 = new RichTextBox();
             SuspendLayout();
             // 
             // label1
@@ -77,7 +77,7 @@
             textBox1.Location = new Point(12, 76);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(330, 23);
+            textBox1.Size = new Size(651, 23);
             textBox1.TabIndex = 3;
             // 
             // label4
@@ -90,46 +90,37 @@
             label4.TabIndex = 4;
             label4.Text = "Exception Message";
             // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.Black;
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(12, 132);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(330, 23);
-            textBox2.TabIndex = 5;
-            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label5.Location = new Point(12, 175);
+            label5.Location = new Point(12, 200);
             label5.Name = "label5";
-            label5.Size = new Size(71, 15);
+            label5.Size = new Size(132, 15);
             label5.TabIndex = 6;
-            label5.Text = "Stack Trace";
+            label5.Text = "Exception Information";
             // 
             // richTextBox1
             // 
             richTextBox1.BackColor = Color.Black;
             richTextBox1.BorderStyle = BorderStyle.FixedSingle;
             richTextBox1.ForeColor = Color.White;
-            richTextBox1.Location = new Point(12, 194);
+            richTextBox1.Location = new Point(12, 219);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(330, 242);
+            richTextBox1.ScrollBars = RichTextBoxScrollBars.ForcedBoth;
+            richTextBox1.Size = new Size(651, 297);
             richTextBox1.TabIndex = 7;
             richTextBox1.Text = "";
+            richTextBox1.WordWrap = false;
             // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(267, 443);
+            button1.Location = new Point(588, 531);
             button1.Name = "button1";
-            button1.Size = new Size(75, 25);
+            button1.Size = new Size(75, 34);
             button1.TabIndex = 8;
             button1.Text = "Close";
             button1.UseVisualStyleBackColor = true;
@@ -139,25 +130,37 @@
             // 
             button2.FlatStyle = FlatStyle.Flat;
             button2.ForeColor = Color.White;
-            button2.Location = new Point(12, 443);
+            button2.Location = new Point(12, 531);
             button2.Name = "button2";
-            button2.Size = new Size(128, 25);
+            button2.Size = new Size(128, 34);
             button2.TabIndex = 9;
             button2.Text = "Create Bug Report";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
+            // 
+            // richTextBox2
+            // 
+            richTextBox2.BackColor = Color.Black;
+            richTextBox2.BorderStyle = BorderStyle.FixedSingle;
+            richTextBox2.ForeColor = Color.White;
+            richTextBox2.Location = new Point(12, 131);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.ScrollBars = RichTextBoxScrollBars.ForcedVertical;
+            richTextBox2.Size = new Size(651, 55);
+            richTextBox2.TabIndex = 10;
+            richTextBox2.Text = "";
             // 
             // CrashMessage
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(354, 480);
+            ClientSize = new Size(675, 578);
+            Controls.Add(richTextBox2);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(richTextBox1);
             Controls.Add(label5);
-            Controls.Add(textBox2);
             Controls.Add(label4);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -181,10 +184,10 @@
         private Label label3;
         private TextBox textBox1;
         private Label label4;
-        private TextBox textBox2;
         private Label label5;
         private RichTextBox richTextBox1;
         private Button button1;
         private Button button2;
+        private RichTextBox richTextBox2;
     }
 }

@@ -55,7 +55,7 @@ namespace CrashHandler
             try
             {
                 // Start browser
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("https://github.com/Soniczac7/Download-Manager/issues/new?assignees=&labels=bug&template=bug_report.yml") { UseShellExecute = true });
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("https://github.com/Lilyy2565/Download-Manager/issues/new?assignees=&labels=bug&template=bug_report.yml") { UseShellExecute = true });
             }
             catch (System.ComponentModel.Win32Exception noBrowser)
             {
@@ -67,13 +67,13 @@ namespace CrashHandler
                 else
                 {
                     // Other error
-                    MessageBox.Show("Cannot automatically open bug report page in your browser. Please visit:\nhttps://github.com/Soniczac7/Download-Manager/issues/new/choose/", "CrashHandler Error");
+                    MessageBox.Show("Cannot automatically open bug report page in your browser. Please visit:\nhttps://github.com/Lilyy2565/Download-Manager/issues/new/choose/", "CrashHandler Error");
                 }
             }
             catch (System.Exception other)
             {
                 // Unknown error
-                MessageBox.Show("Cannot automatically open bug report page in your browser (" + other.Message + "). Please visit:\nhttps://github.com/Soniczac7/Download-Manager/issues/new/choose/", "CrashHandler Error");
+                MessageBox.Show("Cannot automatically open bug report page in your browser (" + other.Message + "). Please visit:\nhttps://github.com/Lilyy2565/Download-Manager/issues/new/choose/", "CrashHandler Error");
             }
         }
 
